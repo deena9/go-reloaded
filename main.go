@@ -34,6 +34,7 @@ func readInput(inputName string) string {
 	return (string(input))
 }
 
+// writeOutput writes the output
 func writeOutput(outputName, result string) {
 	err := os.WriteFile(outputName, []byte(result), 0o644)
 	check(err)
