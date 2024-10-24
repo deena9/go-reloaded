@@ -25,6 +25,7 @@ func checkInputs(input []string) {
 	}
 }
 
+// readInput reads the input
 func readInput(inputName string) string {
 	input, err := os.ReadFile(inputName)
 	if err != nil {
