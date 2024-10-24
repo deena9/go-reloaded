@@ -40,6 +40,7 @@ func writeOutput(outputName, result string) {
 	check(err)
 }
 
+// processIn processes the string
 func processIn(in []string) string {
 	inLen := len(in)
 	if inLen == 0 {
