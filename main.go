@@ -12,6 +12,7 @@ func check(err error) {
 	}
 }
 
+// checkInputs checks that inputs are permissible
 func checkInputs(input []string) {
 	inputLen := len(input)
 	if inputLen != 2 {
@@ -46,17 +47,17 @@ func processIn(in []string) string {
 		if i > 0 && len(in[i]) > 1 && !piscine.IsConsonant(rune(in[i][0])) && (in[i-1] == "a" || in[i-1] == "A") {
 			in[i-1] += "n"
 		}
-		if in[i] == "(hex)" { 
+		if in[i] == "(hex)" {
 			in[i-1], in[i] = piscine.HexToDec(in[i-1]), ""
-		} else if in[i] == "(bin)" { 
+		} else if in[i] == "(bin)" {
 			in[i-1], in[i] = piscine.BinToDec(in[i-1]), ""
-		} else if in[i] == "(up)" { 
+		} else if in[i] == "(up)" {
 			in[i-1], in[i] = piscine.ToUpper(in[i-1]), ""
-		} else if in[i] == "(low)" { 
+		} else if in[i] == "(low)" {
 			in[i-1], in[i] = piscine.ToLower(in[i-1]), ""
-		} else if in[i] == "(cap)" { 
+		} else if in[i] == "(cap)" {
 			in[i-1], in[i] = piscine.ToCapitalize(in[i-1]), ""
-		} else if (in[i] == "(cap" || in[i] == "(up" || in[i] == "(low") && i+2 < inLen { 
+		} else if (in[i] == "(cap" || in[i] == "(up" || in[i] == "(low") && i+2 < inLen {
 			if in[i+1] == "," && len(in[i+3]) > 1 {
 				countInput := in[i+3][:len(in[i+3])-1]
 				if piscine.IsNumber(countInput) {
