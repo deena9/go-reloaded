@@ -1,7 +1,7 @@
 # go-reloaded
 first project
 
-# Introduction
+Introduction
 
 Your project must be written in Go.
 The code should respect the good practices.
