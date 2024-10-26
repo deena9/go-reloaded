@@ -1,6 +1,18 @@
 # go-reloaded
 first project
 
+go-reloaded
+
+Welcome back. Congratulations on your admission. We knew you would make it. Now it is time to get into projects.
+
+Objectives
+
+In this project you will use some of your old functions made in your old repository. You will use them with the objective of making a simple text completion/editing/auto-correction tool.
+
+One more detail. This time the project will be corrected by auditors. The auditors will be other students and you will be an auditor as well.
+
+We advise you to create your own tests for yourself and for when you will correct your auditees.
+
 Introduction
 
 Your project must be written in Go.
@@ -28,10 +40,10 @@ If there are more than one word between the two ' ' marks, the program should pl
 Every instance of a should be turned into an if the next word begins with a vowel (a, e, i, o, u) or a h. (Ex: "There it was. A amazing rock!" -> "There it was. An amazing rock!").
 
 Allowed packages
+
 Standard Go packages are allowed.
-
-
 Usage
+
 $ cat sample.txt
 it (cap) was the best of times, it was the worst of times (up) , it was the age of wisdom, it was the age of foolishness (cap, 6) , it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of darkness, it was the spring of hope, IT WAS THE (low, 3) winter of despair.
 $ go run . sample.txt result.txt
@@ -52,7 +64,8 @@ Punctuation tests are ... kinda boring ,what do you think ?
 $ go run . sample.txt result.txt
 $ cat result.txt
 Punctuation tests are... kinda boring, what do you think?
+
 This project will help you learn about :
 
-- The Go file system(fs) API
-- String and numbers manipulation
+The Go file system(fs) API
+String and numbers manipulation
