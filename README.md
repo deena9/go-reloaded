@@ -1,11 +1,7 @@
 # go-reloaded
 first project
 
-go-reloaded
-
-Welcome back. Congratulations on your admission. We knew you would make it. Now it is time to get into projects.
-
-Objectives
+Objectives:
 
 In this project you will use some of your old functions made in your old repository. You will use them with the objective of making a simple text completion/editing/auto-correction tool.
 
@@ -13,7 +9,7 @@ One more detail. This time the project will be corrected by auditors. The audito
 
 We advise you to create your own tests for yourself and for when you will correct your auditees.
 
-Introduction
+Introduction:
 
 Your project must be written in Go.
 The code should respect the good practices.
